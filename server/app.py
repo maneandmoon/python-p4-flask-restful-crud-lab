@@ -24,6 +24,8 @@ class Plants(Resource):
         return make_response(jsonify(plants), 200)
 
     def post(self):
+        # import ipdb; ipdb.set_trace()
+
         data = request.get_json()
 
         new_plant = Plant(
